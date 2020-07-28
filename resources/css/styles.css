@@ -10,7 +10,7 @@
 
 /* Body */
 body {
-    font-family: Oswald, sans-serif;
+    font-family: Vredana, Oswald, sans-serif;
 }
 
 
@@ -41,6 +41,7 @@ nav {
 nav ul {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -48,4 +49,29 @@ nav li {
     text-decoration: none;
     display: inline-block;
     font-size: 1.2em;
+    margin: 0px 5px;
+}
+
+@media only screen and (max-width: 415px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Logo {
+        margin-top: 20px ;
+        width: 90%;
+    }
+
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+      font-size: 1.4em;
+      border-bottom: 3px solid white;
+      margin: 7px 0;
+    }
 }
