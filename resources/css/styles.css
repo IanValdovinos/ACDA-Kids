@@ -88,7 +88,23 @@ main {
     top: 76px;
     left: 0;
     display: flex;
-    
+    text-align: center;
+}
+
+main p {
+    margin: 0;
+}
+
+.button-group {
+    width: 80%;
+    margin: auto;
+}
+
+.button-group .button {
+    background-color: rgb(156, 155, 160);
+    width: 100%;
+    margin: 7px auto;
+    padding: 2px 0;
 }
 
 /* Left Menu */
@@ -96,8 +112,20 @@ main {
     width: 20%;
     min-height: 50px;
     border: 1px solid green;
+    color: white;
 }
 
+#greeting {
+    background-color: rgb(77, 169, 44);
+    width: 100%;
+    padding: 15px 0;
+}
+
+#mode {
+    background-color: rgb(222, 221, 0);
+    width: 100%;
+    padding: 15px 0;
+}
 
 /* Main Menu */
 #main-menu {
