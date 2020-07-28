@@ -111,20 +111,44 @@ main p {
 #left-menu {
     width: 20%;
     min-height: 50px;
-    border: 1px solid green;
     color: white;
+}
+
+.left-menu-section {
+    width: 100%;
+    padding: 15px 0;
 }
 
 #greeting {
     background-color: rgb(77, 169, 44);
-    width: 100%;
-    padding: 15px 0;
 }
 
 #mode {
     background-color: rgb(222, 221, 0);
-    width: 100%;
-    padding: 15px 0;
+}
+
+#difficulty {
+    background-color: rgb(102, 16, 129);
+}
+
+#selection {
+    background-color: rgb(231, 96, 18);
+}
+
+#donations {
+    background-color: rgb(219, 0, 128);
+}
+
+#success-cases {
+    background-color: rgb(145, 5, 129);
+}
+
+#contact {
+    background-color: rgb(241, 152, 0);
+}
+
+#exit {
+    background-color: rgb(175, 129, 78);
 }
 
 /* Main Menu */
