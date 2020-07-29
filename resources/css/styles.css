@@ -16,8 +16,10 @@ body {
 
 /* Navigation Bar */
 nav {
+    width: 100%;
     min-height: 76px;
     display: flex;
+    justify-content: space-between;
     background-color: rgb(36, 114, 181);
     color: white;
     position: absolute;
@@ -27,6 +29,7 @@ nav {
 
 #Logo {
     width: 20%;
+    max-width: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
