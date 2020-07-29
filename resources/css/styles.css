@@ -110,7 +110,7 @@ main p {
     padding: 2px 0;
 }
 
-/* Left Menu */
+/* ---- Left Menu ----*/
 #left-menu {
     width: 20%;
     min-height: 50px;
@@ -154,15 +154,50 @@ main p {
     background-color: rgb(175, 129, 78);
 }
 
-/* Main Menu */
+/* ---- Main Menu ---- */
 #main-menu {
     width: 50%;
     min-height: 50px;
     border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+#objective-details {
+    width: 100%;
+}
+
+#objective-details table {
+    text-align: left;
+    margin: 20px;
+}
+
+#objective-details td {
+    padding-bottom: 5px;
+}
+
+.left-col {
+    padding-right: 30px;
+}
+
+/* Instructions */
+
+#instructions-textbox {
+    border: 1px solid grey;
+    margin: auto;
+    width: 90%;
+    height: 300px;
+    overflow: scroll;
+    text-align: left;
+}
+
+#instructions-textbox p {
+    margin: 25px 15px;
 }
 
 
-/* Right Menu */
+
+/*---- Right Menu ----*/
 #right-menu {
     width: 30%;
     min-height: 50px;
