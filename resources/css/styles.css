@@ -158,7 +158,6 @@ main p {
 #main-menu {
     width: 50%;
     min-height: 50px;
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
 }
@@ -225,18 +224,41 @@ main p {
 #right-menu {
     width: 30%;
     min-height: 50px;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.section {
-    margin: 20px;
+#score {
+    background-color: rgb(187, 207, 168);
+    
 }
 
-#score {
+#ranking {
+    background-color: rgb(167, 210, 239);
+}
+
+.section {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px 0;
     width: 95%;
-    border: 1px solid red;
+    border: 2px solid grey;
+}
+
+.section-heading {
+    margin: 0;
+}
+
+table.right-menu-table {
+    margin: 10px auto;
+    border-spacing: 10px 5px;
+}
+
+table.right-menu-table td.field-blank {
+    min-width: 70px;
+    background-color: white;
+    border: 2px solid grey;
+    padding: 0 5px;
 }
 
