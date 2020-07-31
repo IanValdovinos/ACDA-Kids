@@ -195,6 +195,30 @@ main p {
     margin: 25px 15px;
 }
 
+/* Icons */
+
+#actions {
+    margin: 20px 15px;
+}
+
+#actions .action {
+    margin: 10px 7px;
+    display: flex;
+    align-items: center;
+} 
+
+.icon {
+    width: 8%;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.action .description {
+    margin: 0 15px;
+}
+
 
 
 /*---- Right Menu ----*/
