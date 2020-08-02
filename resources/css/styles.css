@@ -246,6 +246,25 @@ main p {
     border: 2px solid grey;
 }
 
+.progress-bar .bar {
+    border: 1px solid gray;
+    width: 80%;
+    height: 20px;
+    margin: 15px auto 5px auto;
+    background-color: white;
+}
+
+.progress-bar .progress {
+    width: 33%;
+    height: 100%;
+    background-color: red;
+}
+
+.progress-bar p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
 .section-heading {
     margin: 0;
 }
@@ -262,3 +281,17 @@ table.right-menu-table td.field-blank {
     padding: 0 5px;
 }
 
+/* Daily goal section */
+#daily-goal {
+    background-color: rgb(246, 244, 178);
+}
+
+#daily-goal .checkbox-group {
+    width: fit-content;
+    margin: 5px auto;
+    text-align: left;
+}
+
+#daily-goal label {
+    display: inline;
+}
