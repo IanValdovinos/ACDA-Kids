@@ -238,6 +238,14 @@ main p {
     background-color: rgb(167, 210, 239);
 }
 
+#daily-goal {
+    background-color: rgb(246, 244, 178);
+}
+
+#my-incentive {
+    background-color: rgb(216, 217, 222);
+}
+
 .section {
     margin: 20px;
     border-radius: 20px;
@@ -282,9 +290,6 @@ table.right-menu-table td.field-blank {
 }
 
 /* Daily goal section */
-#daily-goal {
-    background-color: rgb(246, 244, 178);
-}
 
 #daily-goal .checkbox-group {
     width: fit-content;
