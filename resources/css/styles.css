@@ -223,6 +223,8 @@ main p {
 /*---- Right Menu ----*/
 #right-menu {
     width: 30%;
+    min-width: 450px;
+    max-width: 500px;
     min-height: 50px;
     display: flex;
     flex-direction: column;
@@ -289,8 +291,17 @@ table.right-menu-table td.field-blank {
     padding: 0 5px;
 }
 
-table.right-menu-table img {
+table.right-menu-table td.icon img {
     width: 40px;
+}
+
+table.right-menu-table td.stars {
+    text-align: left;
+}
+
+table.right-menu-table td.stars img {
+    width: 15px;
+    margin: 0;
 }
 
 /* Daily goal section */
