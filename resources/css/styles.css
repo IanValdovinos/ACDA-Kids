@@ -289,6 +289,10 @@ table.right-menu-table td.field-blank {
     padding: 0 5px;
 }
 
+table.right-menu-table img {
+    width: 40px;
+}
+
 /* Daily goal section */
 
 #daily-goal .checkbox-group {
