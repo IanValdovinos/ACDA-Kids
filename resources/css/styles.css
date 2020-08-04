@@ -306,10 +306,20 @@ table.right-menu-table td.stars img {
 
 /* Daily goal section */
 
-#daily-goal .checkbox-group {
+#daily-goal .radio-group {
     width: fit-content;
     margin: 5px auto;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+#daily-goal .radio-group div {
+    padding: 0 20px;
+}
+
+#daily-goal .radio-group div.target {
+    border-right: 2px solid grey;
 }
 
 #daily-goal label {
