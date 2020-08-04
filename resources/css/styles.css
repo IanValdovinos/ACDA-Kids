@@ -13,6 +13,12 @@ body {
     font-family: Verdana, Oswald, sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 200ms linear;
+}
+
 
 /* Navigation Bar */
 nav {
@@ -52,7 +58,11 @@ nav ul {
     justify-content: space-around;
 }
 
-nav li {
+nav a:hover {
+    color: #5cc9ee;
+}
+
+nav li  {
     text-decoration: none;
     display: inline-block;
     font-size: 1.2em;
@@ -103,11 +113,17 @@ main p {
     margin: auto;
 }
 
-.button-group .button {
+.button {
     background-color: rgb(156, 155, 160);
     width: 100%;
     margin: 7px auto;
     padding: 2px 0;
+    transition: background-color 200ms ease-in, border-radius 200ms ease-in;
+}  
+
+.button:hover {
+    background-color: grey;
+    border-radius: 15px;
 }
 
 /* ---- Left Menu ----*/
