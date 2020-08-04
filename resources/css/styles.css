@@ -156,18 +156,34 @@ main p {
 
 #donations {
     background-color: rgb(219, 0, 128);
+    transition: background-color 200ms ease-in;
+}
+#donations:hover {
+    background-color: #B00159;
 }
 
 #success-cases {
     background-color: rgb(145, 5, 129);
+    transition: background-color 200ms ease-in;
+}
+#success-cases:hover {
+    background-color: #760367;
 }
 
 #contact {
     background-color: rgb(241, 152, 0);
+    transition: background-color 200ms ease-in;
+}
+#contact:hover {
+    background-color: #C67F04;
 }
 
 #exit {
     background-color: rgb(175, 129, 78);
+    transition: background-color 200ms ease-in;
+}
+#exit:hover {
+    background-color: #946E43;
 }
 
 /* ---- Main Menu ---- */
