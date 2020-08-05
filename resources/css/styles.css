@@ -109,9 +109,25 @@ div.narrow-screen {
 #right-menu {
     border: 1px solid red;
     width: 40%;
+    min-width: 400px;
+    max-width: 500px;
 }
 
-/* -------------------------- */
+@media only screen and (max-width: 1064px){
+    div.narrow-screen {
+        flex-direction: column;
+    }
+
+    #main-menu {
+        width: 100%;
+    }
+    
+    #right-menu {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------- */
 main {
     width: 100%;
     position: absolute;
@@ -205,8 +221,6 @@ main p {
 
 /* ---- Main Menu ---- */
 #main-menu {
-    /* width: 50%; */
-    min-height: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -271,10 +285,6 @@ main p {
 
 /*---- Right Menu ----*/
 #right-menu {
-    /* width: 30%; */
-    min-width: 450px;
-    max-width: 500px;
-    min-height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,7 +292,6 @@ main p {
 
 #score {
     background-color: rgb(187, 207, 168);
-    
 }
 
 #ranking {
