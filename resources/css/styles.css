@@ -95,6 +95,23 @@ nav li  {
 
 /* ---------------------- MAIN PAGE -----------------------*/
 
+/* ----------- Narrow screener -------------- */
+div.narrow-screen {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-menu {
+    border: 1px solid red;
+    width: 60%;
+}
+
+#right-menu {
+    border: 1px solid red;
+    width: 40%;
+}
+
+/* -------------------------- */
 main {
     width: 100%;
     position: absolute;
@@ -188,7 +205,7 @@ main p {
 
 /* ---- Main Menu ---- */
 #main-menu {
-    width: 50%;
+    /* width: 50%; */
     min-height: 50px;
     display: flex;
     flex-direction: column;
@@ -254,7 +271,7 @@ main p {
 
 /*---- Right Menu ----*/
 #right-menu {
-    width: 30%;
+    /* width: 30%; */
     min-width: 450px;
     max-width: 500px;
     min-height: 50px;
