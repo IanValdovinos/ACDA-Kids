@@ -110,7 +110,7 @@ div.narrow-screen {
     border: 1px solid red;
     width: 40%;
     min-width: 400px;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 @media only screen and (max-width: 1064px){
@@ -365,7 +365,7 @@ table.right-menu-table td.stars img {
 /* Daily goal section */
 
 #daily-goal .radio-group {
-    width: fit-content;
+    width: 300px;
     margin: 5px auto;
     text-align: left;
     display: flex;
