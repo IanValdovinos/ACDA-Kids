@@ -97,6 +97,7 @@ nav li  {
 
 /* ----------- Narrow screener -------------- */
 div.narrow-screen {
+    width: 80%;
     display: flex;
     flex-direction: row;
 }
@@ -113,6 +114,7 @@ div.narrow-screen {
 
 @media only screen and (max-width: 1064px){
     div.narrow-screen {
+        width: 100%;
         flex-direction: column;
     }
 
