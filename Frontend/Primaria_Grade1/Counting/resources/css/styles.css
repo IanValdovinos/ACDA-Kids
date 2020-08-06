@@ -1,0 +1,383 @@
+/* Fonts */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* Body */
+body {
+    font-family: Verdana, Oswald, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 200ms linear;
+}
+
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(36, 114, 181);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Logo {
+    width: 20%;
+    max-width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Logo img {
+    width: 80%;
+}
+
+#Navigation {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    color: #5cc9ee;
+}
+
+nav li  {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0px 5px;
+}
+
+@media only screen and (max-width: 415px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Logo {
+        margin-top: 20px ;
+        width: 90%;
+    }
+
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+      font-size: 1.4em;
+      border-bottom: 3px solid white;
+      margin: 7px 0;
+    }
+}
+
+/* ---------------------- MAIN PAGE -----------------------*/
+
+/* ----------- Narrow screener -------------- */
+div.narrow-screen {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#main-menu {
+    width: 60%;
+}
+
+#right-menu {
+    width: 40%;
+}
+
+@media only screen and (max-width: 1064px){
+    div.narrow-screen {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #main-menu {
+        width: 100%;
+    }
+    
+    #right-menu {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------- */
+main {
+    width: 100%;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    display: flex;
+    text-align: center;
+}
+
+main p {
+    margin: 0;
+}
+
+.button-group {
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    background-color: rgb(156, 155, 160);
+    width: 100%;
+    margin: 7px auto;
+    padding: 2px 0;
+    transition: background-color 200ms ease-in, border-radius 200ms ease-in;
+}  
+
+.button:hover {
+    background-color: grey;
+    border-radius: 15px;
+}
+
+/* ---- Left Menu ----*/
+#left-menu {
+    width: 20%;
+    min-height: 50px;
+    color: white;
+}
+
+.left-menu-section {
+    width: 100%;
+    padding: 15px 0;
+}
+
+#greeting {
+    background-color: rgb(77, 169, 44);
+}
+
+#mode {
+    background-color: rgb(222, 221, 0);
+}
+
+#difficulty {
+    background-color: rgb(102, 16, 129);
+}
+
+#selection {
+    background-color: rgb(231, 96, 18);
+}
+
+#donations {
+    background-color: rgb(219, 0, 128);
+    transition: background-color 200ms ease-in;
+}
+#donations:hover {
+    background-color: #B00159;
+}
+
+#success-cases {
+    background-color: rgb(145, 5, 129);
+    transition: background-color 200ms ease-in;
+}
+#success-cases:hover {
+    background-color: #760367;
+}
+
+#contact {
+    background-color: rgb(241, 152, 0);
+    transition: background-color 200ms ease-in;
+}
+#contact:hover {
+    background-color: #C67F04;
+}
+
+#exit {
+    background-color: rgb(175, 129, 78);
+    transition: background-color 200ms ease-in;
+}
+#exit:hover {
+    background-color: #946E43;
+}
+
+/* ---- Main Menu ---- */
+#main-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#objective-details {
+    width: 100%;
+}
+
+#objective-details table {
+    text-align: left;
+    margin: 20px;
+}
+
+#objective-details td {
+    padding-bottom: 5px;
+}
+
+.left-col {
+    padding-right: 30px;
+}
+
+/* Instructions */
+
+#instructions-textbox {
+    border: 1px solid grey;
+    margin: auto;
+    width: 90%;
+    height: 300px;
+    overflow: scroll;
+    text-align: left;
+}
+
+#instructions-textbox p {
+    margin: 25px 15px;
+}
+
+/* Icons */
+
+#actions {
+    margin: 20px 15px;
+}
+
+#actions .action {
+    margin: 10px 7px;
+    display: flex;
+    align-items: center;
+} 
+
+.icon {
+    width: 8%;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.action .description {
+    margin: 0 15px;
+}
+
+
+
+/*---- Right Menu ----*/
+#right-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score {
+    background-color: rgb(187, 207, 168);
+}
+
+#ranking {
+    background-color: rgb(167, 210, 239);
+}
+
+#daily-goal {
+    background-color: rgb(246, 244, 178);
+}
+
+#my-incentive {
+    background-color: rgb(216, 217, 222);
+}
+
+.section {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px 0;
+    width: 95%;
+    border: 2px solid grey;
+}
+
+.progress-bar .bar {
+    border: 1px solid gray;
+    width: 80%;
+    height: 20px;
+    margin: 15px auto 5px auto;
+    background-color: white;
+}
+
+.progress-bar .progress {
+    width: 33%;
+    height: 100%;
+    background-color: red;
+}
+
+.progress-bar p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.section-heading {
+    margin: 0;
+}
+
+table.right-menu-table {
+    margin: 10px auto;
+    border-spacing: 10px 5px;
+}
+
+table.right-menu-table td.field-blank {
+    min-width: 70px;
+    background-color: white;
+    border: 2px solid grey;
+    padding: 0 5px;
+}
+
+table.right-menu-table td.icon img {
+    width: 40px;
+}
+
+table.right-menu-table td.stars {
+    text-align: left;
+}
+
+table.right-menu-table td.stars img {
+    width: 15px;
+    margin: 0;
+}
+
+/* Daily goal section */
+
+#daily-goal .radio-group {
+    width: 350px;
+    margin: 5px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+#daily-goal .radio-group div {
+    padding: 0 20px;
+}
+
+#daily-goal .radio-group div.target {
+    border-right: 2px solid grey;
+}
+
+#daily-goal label {
+    display: inline;
+}
