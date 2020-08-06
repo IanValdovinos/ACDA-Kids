@@ -265,6 +265,7 @@ main p {
     margin: 10px 7px;
     display: flex;
     align-items: center;
+    border: 1px solid red;
 } 
 
 .icon {
