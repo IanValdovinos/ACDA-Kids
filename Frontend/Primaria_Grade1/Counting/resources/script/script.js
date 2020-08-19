@@ -71,6 +71,53 @@ function difficultyButtonSelection(event) {
     }
 }
 
+function selectionButtonSelection(event) {
+    switch (event.target.id) {
+        case 'button-nivel':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_grado.style.backgroundColor = normalButtonColor;
+            button_curso.style.backgroundColor = normalButtonColor;
+            button_materia.style.backgroundColor = normalButtonColor;
+            button_objetivo.style.backgroundColor = normalButtonColor;
+            break;
+
+        case 'button-grado':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_nivel.style.backgroundColor = normalButtonColor;
+            button_curso.style.backgroundColor = normalButtonColor;
+            button_materia.style.backgroundColor = normalButtonColor;
+            button_objetivo.style.backgroundColor = normalButtonColor;
+            break;
+
+        case 'button-curso':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_nivel.style.backgroundColor = normalButtonColor;
+            button_grado.style.backgroundColor = normalButtonColor;
+            button_materia.style.backgroundColor = normalButtonColor;
+            button_objetivo.style.backgroundColor = normalButtonColor;
+            break;
+
+        case 'button-materia':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_nivel.style.backgroundColor = normalButtonColor;
+            button_grado.style.backgroundColor = normalButtonColor;
+            button_curso.style.backgroundColor = normalButtonColor;
+            button_objetivo.style.backgroundColor = normalButtonColor;
+            break;
+
+        case 'button-objetivo':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_nivel.style.backgroundColor = normalButtonColor;
+            button_grado.style.backgroundColor = normalButtonColor;
+            button_curso.style.backgroundColor = normalButtonColor;
+            button_materia.style.backgroundColor = normalButtonColor;
+            break;
+    
+        default:
+            break;
+    }
+}
+
 button_aprendiendo.addEventListener('click', modeButtonSelection);
 button_entrenando.addEventListener('click', modeButtonSelection);
 button_compitiendo.addEventListener('click', modeButtonSelection);
@@ -78,4 +125,10 @@ button_compitiendo.addEventListener('click', modeButtonSelection);
 button_bajo.addEventListener('click', difficultyButtonSelection);
 button_medio.addEventListener('click', difficultyButtonSelection);
 button_alto.addEventListener('click', difficultyButtonSelection);
+
+button_nivel.addEventListener('click', selectionButtonSelection);
+button_grado.addEventListener('click', selectionButtonSelection);
+button_curso.addEventListener('click', selectionButtonSelection);
+button_materia.addEventListener('click', selectionButtonSelection);
+button_objetivo.addEventListener('click', selectionButtonSelection);
 
