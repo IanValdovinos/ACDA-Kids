@@ -46,6 +46,36 @@ function modeButtonSelection(event) {
     }
 }
 
+function difficultyButtonSelection(event) {
+    switch (event.target.id) {
+        case 'button-bajo':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_medio.style.backgroundColor = normalButtonColor;
+            button_alto.style.backgroundColor = normalButtonColor;
+            break;
+
+        case 'button-medio':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_bajo.style.backgroundColor = normalButtonColor;
+            button_alto.style.backgroundColor = normalButtonColor;
+            break;
+
+        case 'button-alto':
+            event.target.style.backgroundColor = pressedButtonColor;
+            button_bajo.style.backgroundColor = normalButtonColor;
+            button_medio.style.backgroundColor = normalButtonColor;
+            break;
+    
+        default:
+            break;
+    }
+}
+
 button_aprendiendo.addEventListener('click', modeButtonSelection);
 button_entrenando.addEventListener('click', modeButtonSelection);
 button_compitiendo.addEventListener('click', modeButtonSelection);
+
+button_bajo.addEventListener('click', difficultyButtonSelection);
+button_medio.addEventListener('click', difficultyButtonSelection);
+button_alto.addEventListener('click', difficultyButtonSelection);
+
