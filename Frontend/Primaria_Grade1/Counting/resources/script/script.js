@@ -19,23 +19,31 @@ const normalButtonColor = 'rgb(156, 155, 160)';
 const pressedButtonColor = 'rgb(107, 106, 108)';
 
 
+let mode = undefined;
+let difficulty = undefined;
+let selection = undefined;
+
+
 // Handle button color depending on selection
 
 function modeButtonSelection(event) {
     switch (event.target.id) {
         case 'button-aprendiendo':
+            mode = 'aprendiendo';
             event.target.style.backgroundColor = pressedButtonColor;
             button_compitiendo.style.backgroundColor = normalButtonColor;
             button_entrenando.style.backgroundColor = normalButtonColor;
             break;
 
         case 'button-entrenando':
+            mode = 'entrenando';
             event.target.style.backgroundColor = pressedButtonColor;
             button_compitiendo.style.backgroundColor = normalButtonColor;
             button_aprendiendo.style.backgroundColor = normalButtonColor;
             break;
 
         case 'button-compitiendo':
+            mode = 'compitiendo';
             event.target.style.backgroundColor = pressedButtonColor;
             button_entrenando.style.backgroundColor = normalButtonColor;
             button_aprendiendo.style.backgroundColor = normalButtonColor;
@@ -49,18 +57,21 @@ function modeButtonSelection(event) {
 function difficultyButtonSelection(event) {
     switch (event.target.id) {
         case 'button-bajo':
+            difficulty = 'bajo';
             event.target.style.backgroundColor = pressedButtonColor;
             button_medio.style.backgroundColor = normalButtonColor;
             button_alto.style.backgroundColor = normalButtonColor;
             break;
 
         case 'button-medio':
+            difficulty = 'medio';
             event.target.style.backgroundColor = pressedButtonColor;
             button_bajo.style.backgroundColor = normalButtonColor;
             button_alto.style.backgroundColor = normalButtonColor;
             break;
 
         case 'button-alto':
+            difficulty = 'alto';
             event.target.style.backgroundColor = pressedButtonColor;
             button_bajo.style.backgroundColor = normalButtonColor;
             button_medio.style.backgroundColor = normalButtonColor;
@@ -74,6 +85,7 @@ function difficultyButtonSelection(event) {
 function selectionButtonSelection(event) {
     switch (event.target.id) {
         case 'button-nivel':
+            selection = 'nivel';
             event.target.style.backgroundColor = pressedButtonColor;
             button_grado.style.backgroundColor = normalButtonColor;
             button_curso.style.backgroundColor = normalButtonColor;
@@ -82,6 +94,7 @@ function selectionButtonSelection(event) {
             break;
 
         case 'button-grado':
+            selection = 'grado';
             event.target.style.backgroundColor = pressedButtonColor;
             button_nivel.style.backgroundColor = normalButtonColor;
             button_curso.style.backgroundColor = normalButtonColor;
@@ -90,6 +103,7 @@ function selectionButtonSelection(event) {
             break;
 
         case 'button-curso':
+            selection = 'curso';
             event.target.style.backgroundColor = pressedButtonColor;
             button_nivel.style.backgroundColor = normalButtonColor;
             button_grado.style.backgroundColor = normalButtonColor;
@@ -98,6 +112,7 @@ function selectionButtonSelection(event) {
             break;
 
         case 'button-materia':
+            selection = 'materia';
             event.target.style.backgroundColor = pressedButtonColor;
             button_nivel.style.backgroundColor = normalButtonColor;
             button_grado.style.backgroundColor = normalButtonColor;
@@ -106,6 +121,7 @@ function selectionButtonSelection(event) {
             break;
 
         case 'button-objetivo':
+            selection = 'objetivo';
             event.target.style.backgroundColor = pressedButtonColor;
             button_nivel.style.backgroundColor = normalButtonColor;
             button_grado.style.backgroundColor = normalButtonColor;
