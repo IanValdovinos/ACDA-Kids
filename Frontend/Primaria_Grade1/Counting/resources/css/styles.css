@@ -150,6 +150,7 @@ main p {
     margin: 7px auto;
     padding: 2px 0;
     transition: background-color 200ms ease-in, border-radius 200ms ease-in;
+    cursor: pointer;
 }  
 
 .button:hover {
